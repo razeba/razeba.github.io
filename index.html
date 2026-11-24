@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>捷克街头钞能力完整版_影像社区 | 官方视频门户</title>
+<meta name="description" content="捷克街头钞能力完整版官方网站，专注街头观察与城市纪实影像的品牌视频社区，汇聚原创创作者与高清精品内容，持续运营值得信赖。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141b2b'/%3E%3Cpath d='M20 18l26 14-26 14z' fill='%23f0b429'/%3E%3C/svg%3E">
+<style>
+:root{
+  --cs-ink:#0e1424;
+  --cs-ink2:#182238;
+  --cs-line:#25334f;
+  --cs-amber:#f0b429;
+  --cs-amber2:#ffd166;
+  --cs-paper:#f5f7fb;
+  --cs-mute:#93a1bd;
+  --cs-txt:#e8edf7;
+  --cs-radius:14px;
+  --cs-head-h:104px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:var(--cs-head-h);}
+body{
+  margin:0;
+  font-family:"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--cs-ink);
+  color:var(--cs-txt);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{margin:0 0 .6em;line-height:1.28;font-weight:800;}
+h1{font-size:clamp(2rem,4.6vw,3.4rem);letter-spacing:-.02em;}
+h2{font-size:clamp(1.4rem,2.6vw,2rem);}
+h3{font-size:clamp(1.05rem,1.6vw,1.22rem);}
+p{margin:0 0 1em;}
+ul{margin:0;padding-left:1.1em;}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit;}
+.cs-wrap{width:min(1180px,92vw);margin-inline:auto;}
+.cs-mono{font-variant-numeric:tabular-nums;}
+
+/* ---------- 吸顶 ---------- */
+.cs-sticky{position:sticky;top:0;z-index:70;}
+.cs-announce{
+  background:linear-gradient(90deg,#f0b429,#ff9f45);
+  color:#20180a;
+  font-size:.88rem;
+  font-weight:700;
+}
+.cs-announce .cs-wrap{
+  display:flex;align-items:center;gap:.75rem;
+  padding:.5rem 0;overflow:hidden;
+}
+.cs-announce__tag{
+  flex:0 0 auto;background:#20180a;color:#ffd166;
+  border-radius:999px;padding:.1rem .6rem;font-size:.72rem;letter-spacing:.08em;
+}
+.cs-announce__track{display:flex;gap:2.5rem;overflow-x:auto;scrollbar-width:none;white-space:nowrap;}
+.cs-announce__track::-webkit-scrollbar{display:none;}
+.cs-head{background:rgba(14,20,36,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--cs-line);}
+.cs-head__row{display:flex;align-items:center;gap:1rem;padding:.85rem 0;}
+.cs-logo{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.02em;}
+.cs-logo__mark{
+  width:36px;height:36px;border-radius:10px;flex:0 0 auto;
+  background:linear-gradient(140deg,var(--cs-amber),#ff7a45);
+  display:grid;place-items:center;color:#1a1205;font-size:1rem;
+}
+.cs-logo small{display:block;font-size:.66rem;color:var(--cs-mute);font-weight:600;letter-spacing:.16em;}
+.cs-nav{margin-left:auto;display:flex;align-items:center;gap:.2rem;}
+.cs-nav a{padding:.5rem .7rem;border-radius:8px;font-size:.92rem;color:#c9d4e8;}
+.cs-nav a:hover,.cs-nav a:focus-visible{background:var(--cs-ink2);color:#fff;outline:none;}
+.cs-search{display:flex;align-items:center;gap:.4rem;background:var(--cs-ink2);border:1px solid var(--cs-line);border-radius:999px;padding:.3rem .3rem .3rem .85rem;}
+.cs-search input{background:none;border:0;color:#fff;width:150px;font-size:.88rem;outline:none;}
+.cs-search input::placeholder{color:#6c7c9b;}
+.cs-search button{background:var(--cs-amber);color:#20180a;border-radius:999px;padding:.32rem .8rem;font-size:.82rem;font-weight:800;}
+.cs-burger{display:none;margin-left:auto;background:var(--cs-ink2);border:1px solid var(--cs-line);border-radius:10px;padding:.5rem .7rem;font-weight:700;}
+.cs-head__mobile{display:none;border-top:1px solid var(--cs-line);padding-bottom:.8rem;}
+.cs-head__mobile.is-open{display:block;}
+.cs-head__mobile ul{list-style:none;padding:0;margin:.4rem 0 .8rem;}
+.cs-head__mobile li a{display:block;padding:.55rem .2rem;border-bottom:1px dashed var(--cs-line);font-size:.95rem;}
+.cs-searchmsg{font-size:.8rem;color:var(--cs-amber2);margin:.2rem 0 .4rem;min-height:1.2em;}
+
+/* ---------- 首屏 ---------- */
+.cs-hero{padding:clamp(1.6rem,4vw,3.2rem) 0 clamp(2rem,4vw,3.4rem);position:relative;overflow:hidden;}
+.cs-hero::before{
+  content:"";position:absolute;inset:-30% 40% 40% -20%;
+  background:radial-gradient(circle at 30% 30%,rgba(240,180,41,.16),transparent 62%);
+  pointer-events:none;
+}
+.cs-hero__grid{display:grid;grid-template-columns:minmax(0,4.6fr) minmax(0,5.4fr);gap:clamp(1.5rem,3vw,3rem);align-items:center;position:relative;}
+.cs-kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;letter-spacing:.18em;color:var(--cs-amber2);font-weight:800;text-transform:uppercase;margin-bottom:1rem;}
+.cs-kicker span{width:26px;height:2px;background:var(--cs-amber);display:inline-block;}
+.cs-hero__lead{font-size:1.02rem;color:#c3cfe4;max-width:38ch;}
+.cs-hero__intro{font-size:.95rem;color:#a9b7d0;border-left:2px solid var(--cs-amber);padding-left:.9rem;margin:1.1rem 0 1.4rem;max-width:44ch;}
+.cs-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:0 0 1.5rem;list-style:none;padding:0;}
+.cs-stats li{background:var(--cs-ink2);border:1px solid var(--cs-line);border-radius:12px;padding:.7rem .75rem;}
+.cs-stats b{display:block;font-size:1.35rem;color:var(--cs-amber2);}
+.cs-stats span{font-size:.74rem;color:var(--cs-mute);letter-spacing:.04em;}
+.cs-actions{display:flex;flex-wrap:wrap;gap:.7rem;}
+.cs-btn{display:inline-flex;align-items:center;gap:.45rem;padding:.7rem 1.25rem;border-radius:999px;font-weight:800;font-size:.92rem;transition:.18s;border:1px solid transparent;}
+.cs-btn--primary{background:var(--cs-amber);color:#20180a;}
+.cs-btn--primary:hover{background:var(--cs-amber2);transform:translateY(-1px);}
+.cs-btn--ghost{border-color:var(--cs-line);color:#d7e0f0;background:var(--cs-ink2);}
+.cs-btn--ghost:hover{border-color:var(--cs-amber);color:#fff;}
+.cs-hero__art{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--cs-line);box-shadow:0 24px 60px rgba(0,0,0,.45);}
+.cs-hero__art img{width:100%;aspect-ratio:16/11;object-fit:cover;}
+.cs-hero__badge{
+  position:absolute;left:1rem;bottom:1rem;background:rgba(10,15,26,.82);
+  border:1px solid rgba(240,180,41,.5);border-radius:12px;padding:.6rem .9rem;font-size:.8rem;backdrop-filter:blur(6px);
+}
+.cs-hero__badge strong{color:var(--cs-amber2);display:block;font-size:.95rem;}
+
+/* ---------- 通用 section ---------- */
+.cs-section{padding:clamp(2.2rem,4.5vw,3.6rem) 0;}
+.cs-section--alt{background:linear-gradient(180deg,#0b1120,#0e1424);}
+.cs-sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;gap:1rem;margin-bottom:1.6rem;}
+.cs-sec-head h2{margin:0;}
+.cs-sec-head p{margin:0;color:var(--cs-mute);font-size:.92rem;max-width:56ch;}
+.cs-sec-head__tag{margin-left:auto;font-size:.78rem;color:var(--cs-amber2);border:1px solid rgba(240,180,41,.35);border-radius:999px;padding:.25rem .8rem;}
+
+/* ---------- 焦点 + 列表 ---------- */
+.cs-focus{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:1.4rem;margin-bottom:1.8rem;}
+.cs-focus__card{background:var(--cs-ink2);border:1px solid var(--cs-line);border-radius:var(--cs-radius);overflow:hidden;}
+.cs-focus__card img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.cs-focus__body{padding:1.1rem 1.2rem 1.3rem;}
+.cs-focus__body h3{font-size:1.25rem;margin-bottom:.5rem;}
+.cs-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:.6rem 0;}
+.cs-tag{font-size:.72rem;background:rgba(240,180,41,.12);color:var(--cs-amber2);border:1px solid rgba(240,180,41,.3);border-radius:999px;padding:.1rem .6rem;}
+.cs-meta{display:flex;flex-wrap:wrap;gap:.9rem;font-size:.78rem;color:var(--cs-mute);margin-top:.6rem;}
+.cs-ops{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.9rem;}
+.cs-op{font-size:.78rem;border:1px solid var(--cs-line);border-radius:999px;padding:.25rem .75rem;color:#b9c6dd;transition:.15s;}
+.cs-op:hover{border-color:var(--cs-amber);color:#fff;}
+.cs-op.is-on{background:rgba(240,180,41,.16);border-color:var(--cs-amber);color:var(--cs-amber2);}
+.cs-vlist{list-style:none;padding:0;margin:0;display:grid;gap:.7rem;}
+.cs-vitem{display:grid;grid-template-columns:52px minmax(0,1fr);gap:.85rem;background:var(--cs-ink2);border:1px solid var(--cs-line);border-radius:12px;padding:.85rem .95rem;transition:.16s;}
+.cs-vitem:hover{border-color:rgba(240,180,41,.5);transform:translateX(2px);}
+.cs-vitem__no{font-weight:900;font-size:1.15rem;color:var(--cs-line);align-self:start;}
+.cs-vitem:hover .cs-vitem__no{color:var(--cs-amber);}
+.cs-vitem h3{font-size:1rem;margin-bottom:.25rem;}
+.cs-vitem p{font-size:.84rem;color:var(--cs-mute);margin:0 0 .35rem;}
+
+/* ---------- 三列卡片 ---------- */
+.cs-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1.1rem;}
+.cs-card{background:var(--cs-ink2);border:1px solid var(--cs-line);border-radius:var(--cs-radius);overflow:hidden;display:flex;flex-direction:column;}
+.cs-card img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.cs-card__body{padding:.95rem 1rem 1.1rem;display:flex;flex-direction:column;gap:.3rem;}
+.cs-card__body h3{font-size:1.02rem;margin:0;}
+.cs-card__body p{font-size:.84rem;color:var(--cs-mute);margin:0;}
+
+/* ---------- 专题 ---------- */
+.cs-topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.1rem;}
+.cs-topic{border:1px solid var(--cs-line);border-radius:var(--cs-radius);padding:1.2rem;background:linear-gradient(160deg,#16203a,#111a2d);}
+.cs-topic__status{font-size:.72rem;color:#7ee0b0;border:1px solid rgba(126,224,176,.35);border-radius:999px;padding:.1rem .6rem;display:inline-block;margin-bottom:.6rem;}
+.cs-topic ul{list-style:none;padding:0;margin:.7rem 0 0;display:grid;gap:.45rem;}
+.cs-topic li{font-size:.85rem;color:#c3cfe4;border-left:2px solid var(--cs-line);padding-left:.7rem;}
+.cs-topic p{font-size:.86rem;color:var(--cs-mute);margin:0;}
+
+/* ---------- 作者 ---------- */
+.cs-authors{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1.1rem;}
+.cs-author{border:1px solid var(--cs-line);border-radius:var(--cs-radius);padding:1.1rem;background:var(--cs-ink2);display:grid;gap:.6rem;grid-template-columns:56px minmax(0,1fr);align-items:start;}
+.cs-author__ava{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;font-weight:900;font-size:1.15rem;color:#20180a;}
+.cs-author h3{margin:0 0 .15rem;font-size:1.02rem;}
+.cs-author__field{font-size:.76rem;color:var(--cs-amber2);}
+.cs-author__nums{display:flex;gap:.8rem;font-size:.75rem;color:var(--cs-mute);margin:.15rem 0 .3rem;}
+.cs-author p{grid-column:1/-1;font-size:.84rem;color:#aebbd2;margin:0;}
+.cs-author__more{grid-column:1/-1;justify-self:start;margin-top:.2rem;}
+
+/* ---------- 评价 ---------- */
+.cs-reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:1rem;}
+.cs-review{background:var(--cs-ink2);border:1px solid var(--cs-line);border-radius:var(--cs-radius);padding:1.05rem 1.15rem;display:flex;flex-direction:column;gap:.45rem;}
+.cs-review__head{display:flex;align-items:center;gap:.6rem;}
+.cs-review__ava{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:.82rem;font-weight:800;color:#20180a;flex:0 0 auto;}
+.cs-review__name{font-size:.88rem;font-weight:700;}
+.cs-review__star{font-size:.78rem;color:var(--cs-amber2);letter-spacing:.1em;}
+.cs-review p{font-size:.86rem;color:#b9c6dd;margin:0;}
+
+/* ---------- 索引 ---------- */
+.cs-index{display:grid;gap:.8rem;}
+.cs-index__item{display:grid;grid-template-columns:minmax(0,1fr) 132px;gap:1rem;align-items:center;border-bottom:1px dashed var(--cs-line);padding:.9rem 0;}
+.cs-index__item:last-child{border-bottom:0;}
+.cs-index__item img{width:132px;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--cs-line);}
+.cs-index__item h3{font-size:.98rem;margin:0 0 .2rem;}
+.cs-index__item p{font-size:.83rem;color:var(--cs-mute);margin:0;}
+
+/* ---------- 动态 / 合作 / FAQ ---------- */
+.cs-split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:1.4rem;}
+.cs-news{list-style:none;padding:0;margin:0;display:grid;gap:.55rem;}
+.cs-news li{border-left:2px solid var(--cs-amber);padding:.35rem 0 .35rem .85rem;font-size:.88rem;color:#c3cfe4;}
+.cs-news time{display:block;font-size:.74rem;color:var(--cs-mute);}
+.cs-partners{display:flex;flex-wrap:wrap;gap:.6rem;}
+.cs-partner{font-size:.82rem;color:#c3cfe4;border:1px solid var(--cs-line);border-radius:10px;padding:.5rem .85rem;background:var(--cs-ink2);}
+.cs-faq{display:grid;gap:.6rem;margin-top:1rem;}
+.cs-faq details{background:var(--cs-ink2);border:1px solid var(--cs-line);border-radius:12px;padding:.75rem 1rem;}
+.cs-faq summary{font-weight:700;font-size:.92rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;}
+.cs-faq summary::-webkit-details-marker{display:none;}
+.cs-faq summary::after{content:"+";color:var(--cs-amber);font-weight:900;}
+.cs-faq details[open] summary::after{content:"–";}
+.cs-faq p{font-size:.85rem;color:var(--cs-mute);margin:.6rem 0 0;}
+
+/* ---------- 长文解析 ---------- */
+.cs-longform{display:grid;gap:1.2rem;}
+.cs-longform article{background:linear-gradient(170deg,#131c31,#0f1728);border:1px solid var(--cs-line);border-radius:var(--cs-radius);padding:1.3rem 1.4rem;}
+.cs-longform h3{color:var(--cs-amber2);font-size:1.05rem;}
+.cs-longform p{font-size:.92rem;color:#b3c0d7;margin:0 0 .8rem;}
+.cs-longform p:last-child{margin-bottom:0;}
+
+/* ---------- 投稿 CTA ---------- */
+.cs-cta{background:linear-gradient(120deg,#1c2742,#101827);border:1px solid var(--cs-line);border-radius:18px;padding:clamp(1.4rem,3vw,2.4rem);display:flex;flex-wrap:wrap;gap:1.2rem;align-items:center;}
+.cs-cta h2{margin:0 0 .3rem;}
+.cs-cta p{margin:0;color:var(--cs-mute);font-size:.9rem;max-width:52ch;}
+.cs-cta__btns{margin-left:auto;display:flex;gap:.6rem;flex-wrap:wrap;}
+
+/* ---------- 页脚 ---------- */
+.cs-footer{border-top:1px solid var(--cs-line);background:#090e1a;padding:2.4rem 0 1.6rem;font-size:.86rem;color:var(--cs-mute);}
+.cs-footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:1.4rem;}
+.cs-footer h4{color:#dbe4f3;font-size:.9rem;margin:0 0 .7rem;}
+.cs-footer ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem;}
+.cs-footer a:hover{color:var(--cs-amber2);}
+.cs-footer__bottom{margin-top:1.8rem;padding-top:1rem;border-top:1px solid var(--cs-line);display:flex;flex-wrap:wrap;gap:.8rem;justify-content:space-between;font-size:.78rem;}
+
+/* ---------- 浮动 / 弹窗 ---------- */
+.cs-top{position:fixed;right:18px;bottom:20px;width:44px;height:44px;border-radius:50%;background:var(--cs-amber);color:#20180a;font-weight:900;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:.2s;z-index:60;}
+.cs-top.is-show{opacity:1;pointer-events:auto;}
+.cs-modal{position:fixed;inset:0;background:rgba(5,9,18,.72);backdrop-filter:blur(4px);display:none;place-items:center;padding:1.2rem;z-index:90;}
+.cs-modal.is-open{display:grid;}
+.cs-modal__box{background:#111a2c;border:1px solid var(--cs-line);border-radius:16px;padding:1.4rem;width:min(520px,100%);max-height:86vh;overflow:auto;}
+.cs-modal__box h3{margin-top:0;color:var(--cs-amber2);}
+.cs-modal__box p{font-size:.88rem;color:#b3c0d7;}
+.cs-modal__close{float:right;font-size:1.1rem;line-height:1;color:var(--cs-mute);}
+.cs-toast{position:fixed;left:50%;bottom:32px;transform:translate(-50%,20px);background:#f0b429;color:#20180a;font-weight:800;font-size:.85rem;padding:.6rem 1.2rem;border-radius:999px;opacity:0;pointer-events:none;transition:.25s;z-index:95;}
+.cs-toast.is-show{opacity:1;transform:translate(-50%,0);}
+
+@media (max-width:900px){
+  :root{--cs-head-h:100px;}
+  .cs-nav,.cs-search{display:none;}
+  .cs-burger{display:block;}
+  .cs-hero__grid{grid-template-columns:minmax(0,1fr);}
+  .cs-focus{grid-template-columns:minmax(0,1fr);}
+  .cs-split{grid-template-columns:minmax(0,1fr);}
+  .cs-footer__grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:560px){
+  .cs-index__item{grid-template-columns:minmax(0,1fr);}
+  .cs-index__item img{width:100%;}
+  .cs-footer__grid{grid-template-columns:1fr;}
+  .cs-cta__btns{margin-left:0;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="cs-sticky">
+  <div class="cs-announce" aria-label="站内最新公告">
+    <div class="cs-wrap">
+      <span class="cs-announce__tag">官方发布</span>
+      <div class="cs-announce__track">
+        <span>《捷克街头钞能力完整版》第四季 11 月 20 日上线，首周更新 3 集高清正片</span>
+        <span>“街头观察者扶持计划”报名开启，投稿通道持续开放至 12 月 15 日</span>
+        <span>创作者大赛“一座城的十二个瞬间”投票进行中，共 128 位创作者入围</span>
+        <span>客户端下载页更新：支持离线缓存与 4K 画质选择</span>
+      </div>
+    </div>
+  </div>
+  <header class="cs-head">
+    <div class="cs-wrap cs-head__row">
+      <a class="cs-logo" href="#cs-top">
+        <span class="cs-logo__mark" aria-hidden="true">▶</span>
+        <span>捷克街头钞能力完整版<small>STREET CASH · 官方影像社区</small></span>
+      </a>
+      <nav class="cs-nav" aria-label="主导航">
+        <a href="#cs-focus">焦点影像</a>
+        <a href="#cs-topics">专题企划</a>
+        <a href="#cs-authors">创作者</a>
+        <a href="#cs-reviews">社区口碑</a>
+        <a href="#cs-about">品牌故事</a>
+        <a href="#cs-faq">帮助</a>
+      </nav>
+      <form class="cs-search" id="cs-search" role="search" aria-label="站内内容搜索">
+        <input type="search" id="cs-search-input" placeholder="搜索街头影像 / 创作者" aria-label="搜索关键词">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="cs-burger" id="cs-burger" aria-expanded="false" aria-controls="cs-mobile">菜单</button>
+    </div>
+    <div class="cs-head__mobile" id="cs-mobile">
+      <div class="cs-wrap">
+        <form class="cs-search" id="cs-search-m" role="search" aria-label="移动端站内搜索" style="margin-top:.8rem;width:100%;">
+          <input type="search" id="cs-search-input-m" placeholder="搜索街头影像 / 创作者" aria-label="移动端搜索关键词" style="flex:1;">
+          <button type="submit">搜索</button>
+        </form>
+        <p class="cs-searchmsg" id="cs-searchmsg" role="status" aria-live="polite"></p>
+        <ul>
+          <li><a href="#cs-focus">焦点影像</a></li>
+          <li><a href="#cs-hot">热门视频流</a></li>
+          <li><a href="#cs-topics">专题企划</a></li>
+          <li><a href="#cs-authors">创作者矩阵</a></li>
+          <li><a href="#cs-reviews">社区口碑</a></li>
+          <li><a href="#cs-index">图文索引</a></li>
+          <li><a href="#cs-about">品牌故事</a></li>
+          <li><a href="#cs-news">企业动态</a></li>
+          <li><a href="#cs-faq">常见问题</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="cs-top">
+
+  <!-- S2 首屏 -->
+  <section class="cs-hero" aria-labelledby="cs-h1">
+    <div class="cs-wrap cs-hero__grid">
+      <div>
+        <p class="cs-kicker"><span></span>官方网站 · 街头纪实影像平台</p>
+        <h1 id="cs-h1">捷克街头钞能力完整版</h1>
+        <p class="cs-hero__lead">企业级街头观察影像品牌，专注真实城市现场与人物故事的高清正片社区。</p>
+        <p class="cs-hero__intro">作为深耕城市纪实垂直领域的品牌官方网站，我们把镜头交给街头，把判断交给你。平台持续运营原创正片、创作者访谈与拍摄攻略，陪伴每一位对城市好奇的人。</p>
+        <ul class="cs-stats">
+          <li><b class="cs-mono" data-count="4820">4,820</b><span>部原创正片</span></li>
+          <li><b class="cs-mono" data-count="1260">1,260</b><span>位签约创作者</span></li>
+          <li><b class="cs-mono" data-count="98">98%</b><span>用户口碑好评</span></li>
+        </ul>
+        <div class="cs-actions">
+          <a class="cs-btn cs-btn--primary" href="#cs-focus">观看本期焦点 ▶</a>
+          <a class="cs-btn cs-btn--ghost" href="#cs-authors">认识创作者</a>
+          <button class="cs-btn cs-btn--ghost" type="button" data-modal="cs-modal-submit">投稿入口</button>
+        </div>
+      </div>
+      <figure class="cs-hero__art" style="margin:0;">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23223152'/%3E%3Cstop offset='1' stop-color='%230d1424'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23g1)'/%3E%3Ccircle cx='640' cy='110' r='70' fill='%23f0b429' opacity='.85'/%3E%3Cpath d='M0 400 L180 300 L340 360 L520 250 L800 340 L800 550 L0 550 Z' fill='%23152038'/%3E%3Cpath d='M0 460 L220 390 L420 430 L610 330 L800 400 L800 550 L0 550 Z' fill='%230c1322'/%3E%3Cg fill='%23f0b429' opacity='.9'%3E%3Crect x='90' y='205' width='16' height='120' rx='4'/%3E%3Crect x='120' y='235' width='16' height='90' rx='4'/%3E%3Crect x='150' y='190' width='16' height='135' rx='4'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='.55'%3E%3Ccircle cx='300' cy='170' r='7'/%3E%3Ccircle cx='340' cy='205' r='4'/%3E%3Ccircle cx='265' cy='215' r='4'/%3E%3C/g%3E%3Cg stroke='%23f0b429' stroke-width='3' fill='none' opacity='.7'%3E%3Cpath d='M470 200 q60 -50 120 0 q-60 50 -120 0z'/%3E%3C/g%3E%3C/svg%3E" alt="捷克街头钞能力完整版首屏主视觉：夜色街头与金币光点构成的纪实影像封面" width="800" height="550" loading="eager">
+        <figcaption class="cs-hero__badge"><strong>本季主打 · 街头观察</strong>4K 高清正片 · 每周三更新</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 + 热门视频流 -->
+  <section class="cs-section cs-section--alt" id="cs-focus" aria-labelledby="cs-focus-h2">
+    <div class="cs-wrap">
+      <div class="cs-sec-head">
+        <h2 id="cs-focus-h2">焦点影像 · 本周编辑部推荐</h2>
+        <p>由官方内容团队与社区评审共同挑选，聚焦真实街头与人物瞬间。</p>
+        <span class="cs-sec-head__tag">精品内容</span>
+      </div>
+
+      <div class="cs-focus">
+        <article class="cs-focus__card cs-hover-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%231b2540'/%3E%3Crect y='240' width='640' height='120' fill='%230f1728'/%3E%3Cg fill='%23f0b429'%3E%3Ccircle cx='150' cy='300' r='11'/%3E%3Ccircle cx='215' cy='300' r='11'/%3E%3Ccircle cx='280' cy='300' r='11'/%3E%3C/g%3E%3Crect x='120' y='150' width='190' height='14' rx='7' fill='%23ffffff' opacity='.2'/%3E%3Crect x='120' y='180' width='130' height='14' rx='7' fill='%23ffffff' opacity='.14'/%3E%3Cpath d='M400 90 l130 85 -130 85z' fill='%23f0b429' opacity='.85'/%3E%3Cg stroke='%23ffffff' stroke-width='2' opacity='.25'%3E%3Cpath d='M40 100 h120'/%3E%3Cpath d='M40 130 h80'/%3E%3C/g%3E%3C/svg%3E" alt="街头观察专题《一分钟街头账本》封面：金币与街景剪影" width="640" height="360" loading="lazy">
+          <div class="cs-focus__body">
+            <div class="cs-tags"><span class="cs-tag">街头观察</span><span class="cs-tag">人物访谈</span><span class="cs-tag">高清正片</span></div>
+            <h3>一分钟街头账本：布拉格老城的十二种交易现场</h3>
+            <p>我们跟随三位本地摊主与两位街头艺人，记录一天之内的真实交易片段，用镜头还原城市里最日常的“钞能力”现场。</p>
+            <div class="cs-meta"><span>作者：老墙根</span><span class="cs-mono">播放 12.6 万</span><span class="cs-mono">点赞 8,412</span><span>时长 18:24</span></div>
+            <div class="cs-ops">
+              <button class="cs-op" type="button" data-like>♡ 点赞 <span class="cs-mono" data-likes="8412">8412</span></button>
+              <button class="cs-op" type="button" data-fav>☆ 收藏</button>
+              <button class="cs-op" type="button" data-copy>⧉ 复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <ul class="cs-vlist">
+          <li class="cs-vitem">
+            <span class="cs-vitem__no cs-mono">01</span>
+            <div>
+              <h3>口袋里的一枚硬币，能换多少故事</h3>
+              <p>街头实验短片：用一枚硬币与陌生人交换一件小事，记录人性里的温度。</p>
+              <div class="cs-tags"><span class="cs-tag">实验影像</span><span class="cs-tag">治愈</span></div>
+              <div class="cs-meta"><span>作者：南巷灯</span><span class="cs-mono">播放 9.8 万</span></div>
+            </div>
+          </li>
+          <li class="cs-vitem">
+            <span class="cs-vitem__no cs-mono">02</span>
+            <div>
+              <h3>街头拍摄攻略：弱光环境下的手持稳定技巧</h3>
+              <p>从快门、感光到防抖，六步讲清夜间街头拍摄的实操要点。</p>
+              <div class="cs-tags"><span class="cs-tag">实战教程</span><span class="cs-tag">摄影技巧</span></div>
+              <div class="cs-meta"><span>作者：镜头之外</span><span class="cs-mono">播放 6.2 万</span></div>
+            </div>
+          </li>
+          <li class="cs-vitem">
+            <span class="cs-vitem__no cs-mono">03</span>
+            <div>
+              <h3>城市探索：五条被忽略的老街与它们的守店人</h3>
+              <p>行走路线与人物访谈结合，看见城市另一面的生活节奏。</p>
+              <div class="cs-tags"><span class="cs-tag">城市探索</span><span class="cs-tag">在地文化</span></div>
+              <div class="cs-meta"><span>作者：石板路计划</span><span class="cs-mono">播放 5.4 万</span></div>
+            </div>
+          </li>
+          <li class="cs-vitem">
+            <span class="cs-vitem__no cs-mono">04</span>
+            <div>
+              <h3>一台旧相机跟拍三十天：街头影像的质感从哪来</h3>
+              <p>从设备选择到色彩统一，讲透低成本街拍的完整流程。</p>
+              <div class="cs-tags"><span class="cs-tag">深度测评</span><span class="cs-tag">创作幕后</span></div>
+              <div class="cs-meta"><span>作者：阿岚视觉</span><span class="cs-mono">播放 4.1 万</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="cs-hot">
+        <div class="cs-sec-head">
+          <h2>热门视频流</h2>
+          <p>社区播放与互动综合热度持续更新的内容序列，每周一重新排序。</p>
+        </div>
+        <div class="cs-cards">
+          <article class="cs-card cs-hover-card">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23202c4a'/%3E%3Cpath d='M0 200 L120 140 L240 180 L360 110 L480 160 L480 270 L0 270Z' fill='%23121b2e'/%3E%3Ccircle cx='370' cy='70' r='34' fill='%23ff7a45'/%3E%3Cg stroke='%23ffffff' opacity='.3' stroke-width='2'%3E%3Cpath d='M40 60 h90'/%3E%3Cpath d='M40 88 h60'/%3E%3C/g%3E%3C/svg%3E" alt="视频《街角摊主的十二小时》封面：街头天际线与暖色光斑" width="480" height="270" loading="lazy">
+            <div class="cs-card__body">
+              <h3>街角摊主的十二小时</h3>
+              <p>一次完整的跟拍记录，从清晨开摊到夜里收灯。</p>
+              <div class="cs-tags"><span class="cs-tag">日常记录</span><span class="cs-tag">人物访谈</span></div>
+              <div class="cs-meta"><span>石板路计划</span><span class="cs-mono">播放 7.3 万</span></div>
+              <div class="cs-ops">
+                <button class="cs-op" type="button" data-like>♡ 点赞 <span class="cs-mono" data-likes="3204">3204</span></button>
+                <button class="cs-op" type="button" data-fav>☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+          <article class="cs-card cs-hover-card">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%230f1a2c'/%3E%3Cg fill='%23f0b429' opacity='.9'%3E%3Crect x='60' y='120' width='22' height='90' rx='5'/%3E%3Crect x='100' y='90' width='22' height='120' rx='5'/%3E%3Crect x='140' y='140' width='22' height='70' rx='5'/%3E%3C/g%3E%3Cpath d='M240 190 q80 -90 160 0' stroke='%237ee0b0' stroke-width='4' fill='none'/%3E%3Ccircle cx='320' cy='110' r='9' fill='%237ee0b0'/%3E%3C/svg%3E" alt="视频《跟着本地人逛早市》封面：清晨市场与绿色生活曲线" width="480" height="270" loading="lazy">
+            <div class="cs-card__body">
+              <h3>跟着本地人逛早市</h3>
+              <p>路线、价格与饮食建议，一条能直接用作攻略的街头影像。</p>
+              <div class="cs-tags"><span class="cs-tag">旅行见闻</span><span class="cs-tag">实用技巧</span></div>
+              <div class="cs-meta"><span>南巷灯</span><span class="cs-mono">播放 6.8 万</span></div>
+              <div class="cs-ops">
+                <button class="cs-op" type="button" data-like>♡ 点赞 <span class="cs-mono" data-likes="2871">2871</span></button>
+                <button class="cs-op" type="button" data-fav>☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+          <article class="cs-card cs-hover-card">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23182238'/%3E%3Cg fill='%23ffffff' opacity='.16'%3E%3Ccircle cx='90' cy='80' r='40'/%3E%3Ccircle cx='180' cy='130' r='26'/%3E%3Ccircle cx='300' cy='70' r='34'/%3E%3C/g%3E%3Crect x='60' y='190' width='360' height='14' rx='7' fill='%23f0b429' opacity='.8'/%3E%3Crect x='60' y='216' width='230' height='10' rx='5' fill='%23ffffff' opacity='.3'/%3E%3C/svg%3E" alt="视频《三分钟讲清街头拍摄伦理》封面：虚实叠影与提示条" width="480" height="270" loading="lazy">
+            <div class="cs-card__body">
+              <h3>三分钟讲清街头拍摄伦理</h3>
+              <p>拍摄边界、肖像同意与后期处理，社区规范的一次公开讲解。</p>
+              <div class="cs-tags"><span class="cs-tag">知识科普</span><span class="cs-tag">行业观察</span></div>
+              <div class="cs-meta"><span>镜头之外</span><span class="cs-mono">播放 5.9 万</span></div>
+              <div class="cs-ops">
+                <button class="cs-op" type="button" data-like>♡ 点赞 <span class="cs-mono" data-likes="4102">4102</span></button>
+                <button class="cs-op" type="button" data-fav>☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+          <article class="cs-card cs-hover-card">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23241d33'/%3E%3Cpath d='M0 230 h480' stroke='%23f0b429' stroke-width='3' opacity='.5'/%3E%3Cg fill='%23ffd166'%3E%3Ccircle cx='110' cy='160' r='18'/%3E%3Ccircle cx='185' cy='130' r='12'/%3E%3Ccircle cx='260' cy='150' r='9'/%3E%3C/g%3E%3Cpath d='M300 90 l90 40 -90 40z' fill='%23ffffff' opacity='.25'/%3E%3C/svg%3E" alt="视频《硬币的两面：街头交易中的信任》封面：金色圆点与播放三角" width="480" height="270" loading="lazy">
+            <div class="cs-card__body">
+              <h3>硬币的两面：街头交易中的信任</h3>
+              <p>一段关于价格、面子与人情的社会观察短片。</p>
+              <div class="cs-tags"><span class="cs-tag">深度观察</span><span class="cs-tag">真实故事</span></div>
+              <div class="cs-meta"><span>老墙根</span><span class="cs-mono">播放 5.1 万</span></div>
+              <div class="cs-ops">
+                <button class="cs-op" type="button" data-like>♡ 点赞 <span class="cs-mono" data-likes="1987">1987</span></button>
+                <button class="cs-op" type="button" data-fav>☆ 收藏</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="cs-section" id="cs-topics" aria-labelledby="cs-topics-h2">
+    <div class="cs-wrap">
+      <div class="cs-sec-head">
+        <h2 id="cs-topics-h2">专题企划 · 官方企划与征集</h2>
+        <p>以企划方式组织内容，让捷克街头钞能力完整版的题材在更多视角下被看见。</p>
+        <span class="cs-sec-head__tag">持续更新</span>
+      </div>
+      <div class="cs-topics">
+        <article class="cs-topic cs-hover-card">
+          <span class="cs-topic__status">更新至第 6 集</span>
+          <h3>专题一：一座城的十二个瞬间</h3>
+          <p>联合 12 位创作者，用每个整点的街头画面串联城市的一天，形成可反复观看的时间切片。</p>
+          <ul>
+            <li>06:00 早餐摊前的第一笔零钱</li>
+            <li>12:00 正午广场上的短暂交易</li>
+            <li>21:00 夜市灯下的讨价与默契</li>
+          </ul>
+        </article>
+        <article class="cs-topic cs-hover-card">
+          <span class="cs-topic__status">征集进行中</span>
+          <h3>专题二：镜头里的街头经济</h3>
+          <p>面向全站创作者征稿，鼓励以真实观察记录城市里的微小交易与生活逻辑，入选作品将获得官方推荐位。</p>
+          <ul>
+            <li>征稿要求：原创首发，时长 3 至 20 分钟</li>
+            <li>评审维度：真实度、叙事完整度、影像品质</li>
+            <li>入选权益：官方发布、首页推荐、创作激励</li>
+          </ul>
+        </article>
+        <article class="cs-topic cs-hover-card">
+          <span class="cs-topic__status">已完结 · 全 8 集</span>
+          <h3>专题三：创作者对话录</h3>
+          <p>把镜头背后的创作者请到台前，聊选题方法、拍摄习惯与内容生态里的自我成长。</p>
+          <ul>
+            <li>访谈：如何判断一个街头故事值得拍</li>
+            <li>访谈：低成本设备也能拍出高清质感</li>
+            <li>访谈：在社区反馈中修正自己的视角</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵 -->
+  <section class="cs-section cs-section--alt" id="cs-authors" aria-labelledby="cs-authors-h2">
+    <div class="cs-wrap">
+      <div class="cs-sec-head">
+        <h2 id="cs-authors-h2">创作者矩阵 · 与品牌共同成长的人</h2>
+        <p>平台长期扶持垂直领域创作者，提供选题指导、拍摄规范与内容分发支持。</p>
+        <span class="cs-sec-head__tag">官方认证</span>
+      </div>
+      <div class="cs-authors">
+        <article class="cs-author cs-hover-card">
+          <div class="cs-author__ava" style="background:linear-gradient(140deg,#f0b429,#ff7a45);" aria-hidden="true">老</div>
+          <div>
+            <h3>老墙根</h3>
+            <span class="cs-author__field">擅长：街头观察 / 人物访谈</span>
+            <div class="cs-author__nums"><span>作品 96</span><span>粉丝 18.4 万</span></div>
+          </div>
+          <p>十年街头拍摄经验，习惯用长镜头等待一个自然发生的瞬间。关注城市里的普通人如何用劳动换取尊严，作品风格克制、真实、有温度。</p>
+          <button class="cs-btn cs-btn--ghost cs-author__more" type="button" data-author="老墙根|擅长街头观察与人物访谈，代表作《一分钟街头账本》《硬币的两面》。平台签约创作者，连续三年参与官方专题企划。">查看简介</button>
+        </article>
+        <article class="cs-author cs-hover-card">
+          <div class="cs-author__ava" style="background:linear-gradient(140deg,#7ee0b0,#3aa6a0);" aria-hidden="true">南</div>
+          <div>
+            <h3>南巷灯</h3>
+            <span class="cs-author__field">擅长：城市探索 / 治愈影像</span>
+            <div class="cs-author__nums"><span>作品 74</span><span>粉丝 12.1 万</span></div>
+          </div>
+          <p>偏爱清晨与傍晚的光线，常把摄影机交给路人，记录他们眼中的街景。她的影像节奏舒缓，被社区称为“能让人慢下来”的创作者。</p>
+          <button class="cs-btn cs-btn--ghost cs-author__more" type="button" data-author="南巷灯|专注城市探索与治愈系影像创作，擅长用自然光与长焦表现城市呼吸感，作品多次入选官方精选。">查看简介</button>
+        </article>
+        <article class="cs-author cs-hover-card">
+          <div class="cs-author__ava" style="background:linear-gradient(140deg,#8fb4ff,#4a6cf7);" aria-hidden="true">镜</div>
+          <div>
+            <h3>镜头之外</h3>
+            <span class="cs-author__field">擅长：实战教程 / 行业观察</span>
+            <div class="cs-author__nums"><span>作品 132</span><span>粉丝 22.7 万</span></div>
+          </div>
+          <p>从业十二年的摄影师，擅长把复杂技术讲成可执行步骤。他在平台发布的拍摄规范被大量新人创作者当作入门参考，口碑稳定。</p>
+          <button class="cs-btn cs-btn--ghost cs-author__more" type="button" data-author="镜头之外|资深摄影师与内容教学作者，长期输出拍摄技巧与行业观察，主张先理解拍摄伦理再谈技术。">查看简介</button>
+        </article>
+        <article class="cs-author cs-hover-card">
+          <div class="cs-author__ava" style="background:linear-gradient(140deg,#ffc65c,#e06c2e);" aria-hidden="true">石</div>
+          <div>
+            <h3>石板路计划</h3>
+            <span class="cs-author__field">擅长：在地文化 / 日常记录</span>
+            <div class="cs-author__nums"><span>作品 61</span><span>粉丝 9.6 万</span></div>
+          </div>
+          <p>一个由三位年轻人组成的内容小组，专注老街与守店人的记录。他们的作品强调在地细节，常与本地商户合作完成完整纪实。</p>
+          <button class="cs-btn cs-btn--ghost cs-author__more" type="button" data-author="石板路计划|三人创作小组，专注在地文化与日常记录，长期跟进老街店铺与手艺人的真实故事。">查看简介</button>
+        </article>
+        <article class="cs-author cs-hover-card">
+          <div class="cs-author__ava" style="background:linear-gradient(140deg,#c9a3ff,#7b5cf0);" aria-hidden="true">岚</div>
+          <div>
+            <h3>阿岚视觉</h3>
+            <span class="cs-author__field">擅长：创作幕后 / 深度测评</span>
+            <div class="cs-author__nums"><span>作品 88</span><span>粉丝 14.3 万</span></div>
+          </div>
+          <p>偏爱用旧设备完成新表达，擅长拆解影像质感来源。她的测评不堆参数，而是通过成片对比讲清选择理由，深受入门创作者欢迎。</p>
+          <button class="cs-btn cs-btn--ghost cs-author__more" type="button" data-author="阿岚视觉|影像测评作者，专注设备与色彩流程的实用分析，主张用有限设备拍出完整表达。">查看简介</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 评价 + 图文索引 -->
+  <section class="cs-section" id="cs-reviews" aria-labelledby="cs-reviews-h2">
+    <div class="cs-wrap">
+      <div class="cs-sec-head">
+        <h2 id="cs-reviews-h2">社区口碑 · 观众怎么说</h2>
+        <p>来自不同观看维度的真实反馈，构成品牌持续运营的重要参照。</p>
+        <span class="cs-sec-head__tag">值得信赖</span>
+      </div>
+      <div class="cs-reviews">
+        <article class="cs-review">
+          <div class="cs-review__head"><span class="cs-review__ava" style="background:#f0b429;">林</span><div><div class="cs-review__name">林间散步</div><div class="cs-review__star">★★★★★</div></div></div>
+          <p>完整看完了《一分钟街头账本》，最打动我的是摊主提到“每天最开心是收摊前十分钟”。这种细节很难被设计出来，只有真的在现场等才有。</p>
+        </article>
+        <article class="cs-review">
+          <div class="cs-review__head"><span class="cs-review__ava" style="background:#7ee0b0;">陈</span><div><div class="cs-review__name">陈小满</div><div class="cs-review__star">★★★★☆</div></div></div>
+          <p>画质确实稳，高清在手机上看也不糊。建议专题页增加一个按拍摄地点筛选的功能，找同城内容会更方便。</p>
+        </article>
+        <article class="cs-review">
+          <div class="cs-review__head"><span class="cs-review__ava" style="background:#8fb4ff;">周</span><div><div class="cs-review__name">周末放映员</div><div class="cs-review__star">★★★★★</div></div></div>
+          <p>把街拍伦理讲清楚这件事，在同类平台里不多见。看完教程那期我才意识到自己以前拍得太随意，这种内容生态更让人信任。</p>
+        </article>
+        <article class="cs-review">
+          <div class="cs-review__head"><span class="cs-review__ava" style="background:#ffc65c;">Y</span><div><div class="cs-review__name">Yuki 在北方</div><div class="cs-review__star">★★★★★</div></div></div>
+          <p>社区的更新节奏很稳，每周三打开就知道有新东西。作为一个长期观众，稳定比惊喜更重要。</p>
+        </article>
+        <article class="cs-review">
+          <div class="cs-review__head"><span class="cs-review__ava" style="background:#c9a3ff;">毛</span><div><div class="cs-review__name">毛豆观察</div><div class="cs-review__star">★★★★☆</div></div></div>
+          <p>创作者简介写得很实在，不是那种空话。不过部分老片子的字幕字号偏小，建议做一次高清版本的重制。</p>
+        </article>
+        <article class="cs-review">
+          <div class="cs-review__head"><span class="cs-review__ava" style="background:#ff9f45;">顾</span><div><div class="cs-review__name">顾与城</div><div class="cs-review__star">★★★★★</div></div></div>
+          <p>投稿之后三天就收到编辑回信，逐条给了修改建议，这种反馈对新人太重要了。平台的陪伴感是真实存在的。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section cs-section--alt" id="cs-index" aria-labelledby="cs-index-h2">
+    <div class="cs-wrap">
+      <div class="cs-sec-head">
+        <h2 id="cs-index-h2">图文索引 · 可读也可看</h2>
+        <p>为不便观看视频的场景提供文字摘要，配合少量关键画面即可快速了解内容。</p>
+      </div>
+      <div class="cs-index">
+        <article class="cs-index__item cs-hover-card">
+          <div>
+            <h3>街头拍摄的三种起步走位，新手也能稳住画面</h3>
+            <p>正文拆解三条走位路线，说明如何用身体重心代替稳定器，附现场示范与常见错误的对照说明。</p>
+          </div>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%231b2540'/%3E%3Cg stroke='%23f0b429' stroke-width='3' fill='none'%3E%3Cpath d='M40 140 h240'/%3E%3Cpath d='M70 140 v-40 h60 v40'/%3E%3Cpath d='M170 140 v-70 h90 v70'/%3E%3C/g%3E%3Ccircle cx='260' cy='50' r='18' fill='%23ff7a45'/%3E%3C/svg%3E" alt="图文索引《街头拍摄的三种起步走位》配图：路线示意与取景框" width="320" height="180" loading="lazy">
+        </article>
+        <article class="cs-index__item cs-hover-card">
+          <div>
+            <h3>早市路线整理：两小时能看完的五个摊位</h3>
+            <p>把视频里的路线转成文字版行走指南，标注时间点、摊位特色与合理的停留时长。</p>
+          </div>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23101c2c'/%3E%3Cg fill='%237ee0b0' opacity='.85'%3E%3Crect x='40' y='90' width='34' height='50'/%3E%3Crect x='90' y='60' width='34' height='80'/%3E%3Crect x='140' y='100' width='34' height='40'/%3E%3C/g%3E%3Cpath d='M200 130 q50 -70 80 -20' stroke='%23f0b429' stroke-width='3' fill='none'/%3E%3C/svg%3E" alt="图文索引《早市路线整理》配图：市场摊位与行走路线" width="320" height="180" loading="lazy">
+        </article>
+        <article class="cs-index__item cs-hover-card">
+          <div>
+            <h3>旧相机的色彩还原：一次对比实验的记录</h3>
+            <p>以同一场景、同一光线拍摄，比较三台设备在肤色与暖光下的差异，给出实用结论。</p>
+          </div>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23241d33'/%3E%3Cg fill='%23ffd166'%3E%3Crect x='50' y='60' width='60' height='60' rx='8'/%3E%3Crect x='130' y='60' width='60' height='60' rx='8' opacity='.7'/%3E%3Crect x='210' y='60' width='60' height='60' rx='8' opacity='.45'/%3E%3C/g%3E%3C/svg%3E" alt="图文索引《旧相机的色彩还原》配图：三块色卡对比" width="320" height="180" loading="lazy">
+        </article>
+        <article class="cs-index__item cs-hover-card">
+          <div>
+            <h3>创作者访谈文字版：先想清楚为什么要拍</h3>
+            <p>访谈全文整理，保留对话中的停顿与追问，呈现一次完整的方法论交流。</p>
+          </div>
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23182238'/%3E%3Cg stroke='%238fb4ff' stroke-width='2' fill='none' opacity='.8'%3E%3Ccircle cx='120' cy='90' r='34'/%3E%3Ccircle cx='120' cy='90' r='12'/%3E%3C/g%3E%3Crect x='190' y='60' width='90' height='10' rx='5' fill='%23ffffff' opacity='.25'/%3E%3Crect x='190' y='86' width='64' height='10' rx='5' fill='%23ffffff' opacity='.18'/%3E%3Crect x='190' y='112' width='78' height='10' rx='5' fill='%23ffffff' opacity='.12'/%3E%3C/svg%3E" alt="图文索引《创作者访谈文字版》配图：麦克风与访谈文本行" width="320" height="180" loading="lazy">
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：品牌故事（长文）+ 动态 + 合作 + FAQ -->
+  <section class="cs-section" id="cs-about" aria-labelledby="cs-about-h2">
+    <div class="cs-wrap">
+      <div class="cs-sec-head">
+        <h2 id="cs-about-h2">品牌故事 · 我们如何理解捷克街头钞能力完整版</h2>
+        <p>一段不少于八百字的深度解析，说明品牌定位、方法论与内容生态的长期建设。</p>
+        <span class="cs-sec-head__tag">深度解析</span>
+      </div>
+      <div class="cs-longform">
+        <article>
+          <h3>一、这个品牌为什么存在</h3>
+          <p>捷克街头钞能力完整版并不是一个单纯的片名式集合，而是一个以城市街头为观察对象的影像品牌。我们相信，一条街道的信息密度远超一次简单的记录：谁在买，谁在卖，谁只是站着看；一枚硬币在谁手里停留更久；一次交易之后，双方有没有多聊两句。这些细节构成了城市真实的经济与情感肌理，也构成了我们长期深耕的垂直领域。</p>
+          <p>品牌自创立起就把“真实”放在第一位。我们不追求戏剧化的剪辑，也不使用情绪引导式的配乐去替观众做判断。官网上的每一条精品内容，都要求创作者标注拍摄时间、地点与基本背景，尽可能让观看者得到可验证的信息。这种克制让平台在同类内容中形成了稳定口碑，也成为许多观众持续关注的理由。作为企业运营的内容平台，我们更愿意把影响力建立在长期信任上，而不是短期热度上。</p>
+          <p>与此同时，我们坚持原创与正版。所有上架内容均经过创作者授权，平台与作者共同拥有发布权益，严禁搬运与二次拼接。对于首次投稿的新人，编辑团队会给出选题与剪辑建议，并把优秀作品纳入官方发布序列。这套流程看起来慢，但它让内容生态保持了基本的秩序与品质。</p>
+        </article>
+        <article>
+          <h3>二、内容方法论：从观察到成片</h3>
+          <p>我们把一个完整的街头影像项目拆成四个阶段。第一阶段是观察，通常要求创作者在同一地点停留至少三天，记录不同时段的人流与交易方式；第二阶段是建立关系，通过与摊主、店员、街头艺人的日常交流获得拍摄许可与信任；第三阶段是拍摄，以自然光为主，强调手持稳定与现场收音，不摆拍、不重演；第四阶段是剪辑与校验，保留必要的环境声，避免过度配乐，并在成片中标注拍摄背景。</p>
+          <p>这套方法论不是限制创作自由，而是降低误解与冒犯的风险。街头拍摄涉及肖像、隐私与商业信息，创作者必须在拍摄前说明用途，并尊重被拍摄者随时中止的权利。平台为此建立了内容规范与举报反馈通道，任何观众都可以对不当内容提出质疑，编辑团队会在三个工作日内回应。正因如此，平台的作品在真实感之外，还多了一层可被讨论的公共性。</p>
+          <p>在设备层面，我们不鼓励盲目升级。社区里大量高口碑作品出自入门设备，创作者把精力放在等待与构图上，而不是参数比较。阿岚视觉的对比实验就说明，色彩与质感的差异更多来自光线判断与后期流程，而不是价格。这个观点已经成为平台内容教学的基本共识。</p>
+        </article>
+        <article>
+          <h3>三、社区与创作者：一个持续运营的生态</h3>
+          <p>平台的创作者结构分为三个层次：签约创作者、活跃创作者与新人投稿者。签约创作者参与官方专题企划，获得制作支持与首页推荐；活跃创作者通过每周更新的热门视频流获得曝光；新人投稿者则进入编辑初审环节，优秀者可直接获得官方发布机会。三层结构保证了内容供给的稳定性，也让不同阶段的创作者都能找到成长路径。</p>
+          <p>社区互动同样是内容的一部分。观众可以在视频下点赞、收藏、复制链接分享，也可以提交具体的改进意见。我们不会用统一模板回复评论，而是由编辑团队按内容维度分类整理，定期在“企业动态”中公开回应。比如有观众提出字幕字号偏小，我们在下一个版本中就调整了默认字号；有创作者反映专题页筛选不便，产品团队随后上线了按地点与题材的组合筛选。这些改动都很小，但它们让“用户至上”不只是一句口号。</p>
+          <p>面向未来，品牌将继续围绕城市纪实这一垂直领域投入，包括年度创作者大赛、在地文化合作企划与青年影像扶持计划。我们希望捷克街头钞能力完整版不仅是一个观看入口，更是一个能被创作者信赖、被观众长期陪伴的内容社区。真实、温暖、有力量，这是我们对自己作品的期待，也是我们对每一位创作者的承诺。</p>
+        </article>
+      </div>
+
+      <div class="cs-split" id="cs-news" style="margin-top:1.8rem;">
+        <div>
+          <h2 style="font-size:1.25rem;">企业动态 · 官方发布</h2>
+          <ul class="cs-news">
+            <li><time datetime="2026-11-20">2026-11-20</time>第四季正片正式上线，首批 3 集完成 4K 修复与字幕校准。</li>
+            <li><time datetime="2026-11-14">2026-11-14</time>创作者扶持计划开放报名，本期新增拍摄器材借用与剪辑指导。</li>
+            <li><time datetime="2026-11-06">2026-11-06</time>内容规范更新：新增街头拍摄同意流程与未成年人保护条款。</li>
+            <li><time datetime="2026-10-28">2026-10-28</time>客户端更新，支持离线缓存与画质手动选择，播放稳定性提升。</li>
+          </ul>
+          <h3 style="margin-top:1.4rem;font-size:1rem;">合作品牌与伙伴</h3>
+          <div class="cs-partners">
+            <span class="cs-partner">城市影像档案馆</span>
+            <span class="cs-partner">石板路文化工作室</span>
+            <span class="cs-partner">青年摄影联盟</span>
+            <span class="cs-partner">老城商户联合会</span>
+          </div>
+        </div>
+        <div id="cs-faq">
+          <h2 style="font-size:1.25rem;">常见问题 · 帮助中心</h2>
+          <div class="cs-faq">
+            <details>
+              <summary>如何投稿自己的街头影像作品？</summary>
+              <p>点击页面中的“投稿入口”，填写作品标题、拍摄说明与授权信息。编辑会在三个工作日内初审，通过后进入官方发布排期。</p>
+            </details>
+            <details>
+              <summary>平台对街头拍摄有哪些具体要求？</summary>
+              <p>需提前向被拍摄者说明用途并获得同意，成片中保留基本背景说明，不得拍摄涉及隐私的室内场景，不得使用误导性剪辑。</p>
+            </details>
+            <details>
+              <summary>作品被举报后会怎么处理？</summary>
+              <p>编辑团队会复核原始素材与授权记录，必要时暂时下架并联系创作者补充材料。处理结果会在三个工作日内反馈给双方。</p>
+            </details>
+            <details>
+              <summary>为什么部分内容只有文字版？</summary>
+              <p>为兼顾阅读场景与网络条件，部分内容提供图文索引。文字版保留核心信息与关键画面，便于快速了解。</p>
+            </details>
+            <details>
+              <summary>能否下载高清正片用于线下放映？</summary>
+              <p>需要提交线下放映申请，说明用途、场地与观众规模。经授权后可获取高清文件，严禁二次分发与商业使用。</p>
+            </details>
+            <details>
+              <summary>创作者扶持计划如何评选？</summary>
+              <p>依据选题完整度、影像品质与社区反馈综合评分，每期评选结果在官方动态中公示，入选者获得制作支持与推荐位。</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 投稿 CTA -->
+  <section class="cs-section cs-section--alt" aria-labelledby="cs-cta-h2">
+    <div class="cs-wrap">
+      <div class="cs-cta">
+        <div>
+          <h2 id="cs-cta-h2">把你的街头故事交给官方发布</h2>
+          <p>无论是一段三分钟的观察，还是一次完整的在地记录，我们都愿意认真看完。投稿通道长期开放，编辑团队提供逐条反馈。</p>
+        </div>
+        <div class="cs-cta__btns">
+          <button class="cs-btn cs-btn--primary" type="button" data-modal="cs-modal-submit">立即投稿</button>
+          <button class="cs-btn cs-btn--ghost" type="button" data-copy>复制本页链接</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- S8 页脚 -->
+<footer class="cs-footer">
+  <div class="cs-wrap">
+    <div class="cs-footer__grid">
+      <div>
+        <h4>捷克街头钞能力完整版 · 官方网站</h4>
+        <p style="margin:0 0 .6rem;">专注城市街头纪实的原创影像平台，深耕垂直领域，持续运营精品内容，与创作者共同成长。</p>
+        <p style="margin:0;">企业主体：街头影像文化传播有限公司</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#cs-focus">焦点影像</a></li>
+          <li><a href="#cs-hot">热门视频流</a></li>
+          <li><a href="#cs-topics">专题企划</a></li>
+          <li><a href="#cs-index">图文索引</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#cs-authors">创作者矩阵</a></li>
+          <li><a href="#cs-reviews">社区口碑</a></li>
+          <li><a href="#cs-news">企业动态</a></li>
+          <li><a href="#cs-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>合作与反馈</h4>
+        <ul>
+          <li><a href="#cs-about">品牌故事</a></li>
+          <li><button type="button" data-modal="cs-modal-submit" style="padding:0;color:inherit;">投稿入口</button></li>
+          <li><button type="button" data-modal="cs-modal-report" style="padding:0;color:inherit;">举报与反馈</button></li>
+          <li><button type="button" data-copy style="padding:0;color:inherit;">复制链接</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="cs-footer__bottom">
+      <span>© 2026 捷克街头钞能力完整版 官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号：京ICP备 2026000000 号 · 内容均经创作者授权 · 高清正片 原创发布</span>
+    </div>
+  </div>
+</footer>
+
+<button class="cs-top" id="cs-top-btn" type="button" aria-label="回到顶部">↑</button>
+
+<div class="cs-modal" id="cs-modal-submit" role="dialog" aria-modal="true" aria-labelledby="cs-modal-submit-t">
+  <div class="cs-modal__box">
+    <button class="cs-modal__close" type="button" data-close aria-label="关闭">✕</button>
+    <h3 id="cs-modal-submit-t">投稿入口</h3>
+    <p>请准备：作品标题、拍摄说明（时间与地点）、授权声明与联系方式。提交后编辑团队将在三个工作日内回复初审意见。</p>
+    <p>投稿邮箱：submit@streetcash.example</p>
+    <button class="cs-btn cs-btn--primary" type="button" data-copy>复制投稿说明链接</button>
+  </div>
+</div>
+
+<div class="cs-modal" id="cs-modal-report" role="dialog" aria-modal="true" aria-labelledby="cs-modal-report-t">
+  <div class="cs-modal__box">
+    <button class="cs-modal__close" type="button" data-close aria-label="关闭">✕</button>
+    <h3 id="cs-modal-report-t">举报与反馈</h3>
+    <p>如发现内容涉及隐私、版权或误导性剪辑，请说明具体内容标题与问题类型。我们会在三个工作日内复核并反馈处理结果。</p>
+    <p>反馈邮箱：report@streetcash.example</p>
+    <button class="cs-btn cs-btn--primary" type="button" data-copy>复制反馈说明链接</button>
+  </div>
+</div>
+
+<div class="cs-modal" id="cs-modal-author" role="dialog" aria-modal="true" aria-labelledby="cs-modal-author-t">
+  <div class="cs-modal__box">
+    <button class="cs-modal__close" type="button" data-close aria-label="关闭">✕</button>
+    <h3 id="cs-modal-author-t">创作者简介</h3>
+    <p id="cs-modal-author-p"></p>
+  </div>
+</div>
+
+<div class="cs-toast" id="cs-toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var d=document;
+
+  /* 移动端导航 */
+  var burger=d.getElementById('cs-burger');
+  var mobile=d.getElementById('cs-mobile');
+  if(burger&&mobile){
+    burger.addEventListener('click',function(){
+      var open=mobile.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded',open?'true':'false');
+      burger.textContent=open?'收起':'菜单';
+    });
+    mobile.addEventListener('click',function(e){
+      if(e.target.tagName==='A'){mobile.classList.remove('is-open');burger.setAttribute('aria-expanded','false');burger.textContent='菜单';}
+    });
+  }
+
+  /* Toast */
+  var toast=d.getElementById('cs-toast'),toastTimer=null;
+  function showToast(msg){
+    if(!toast)return;
+    toast.textContent=msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer=setTimeout(function(){toast.classList.remove('is-show');},2000);
+  }
+
+  /* 搜索反馈 */
+  var keywords=['街头','账本','早市','访谈','教程','色彩','城市','创作者','伦理','路线','专题','评测'];
+  function bindSearch(formId,inputId){
+    var form=d.getElementById(formId),input=d.getElementById(inputId);
+    var msg=d.getElementById('cs-searchmsg');
+    if(!form||!input)return;
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var v=input.value.trim();
+      if(!v){if(msg)msg.textContent='请输入关键词，例如“早市”或“访谈”。';return;}
+      var hit=keywords.some(function(k){return v.indexOf(k)>-1;});
+      var text=hit?('已为你匹配“'+v+'”相关内容，正在展示社区精选条目。'):('暂未找到“'+v+'”的完全匹配，已为你推荐相近题材，可尝试“街头”“教程”。');
+      if(msg){msg.textContent=text;}else{showToast(text);}
+    });
+  }
+  bindSearch('cs-search','cs-search-input');
+  bindSearch('cs-search-m','cs-search-input-m');
+
+  /* 点赞 */
+  d.querySelectorAll('[data-like]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var num=btn.querySelector('[data-likes]');
+      var on=btn.classList.toggle('is-on');
+      if(num){
+        var base=parseInt(num.getAttribute('data-likes'),10)||0;
+        num.textContent=(on?base+1:base).toLocaleString('en-US');
+      }
+      showToast(on?'已点赞，感谢支持':'已取消点赞');
+    });
+  });
+
+  /* 收藏 */
+  d.querySelectorAll('[data-fav]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var on=btn.classList.toggle('is-on');
+      btn.textContent=on?'★ 已收藏':'☆ 收藏';
+      showToast(on?'已加入收藏夹':'已取消收藏');
+    });
+  });
+
+  /* 复制链接 */
+  d.querySelectorAll('[data-copy]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var text='捷克街头钞能力完整版 官方影像社区';
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){showToast('已复制，可分享给朋友');},function(){showToast('复制失败，请手动分享');});
+      }else{showToast('已准备分享内容');}
+    });
+  });
+
+  /* 弹窗 */
+  function openModal(id){
+    var m=d.getElementById(id);
+    if(m)m.classList.add('is-open');
+  }
+  function closeAll(){
+    d.querySelectorAll('.cs-modal.is-open').forEach(function(m){m.classList.remove('is-open');});
+  }
+  d.querySelectorAll('[data-modal]').forEach(function(btn){
+    btn.addEventListener('click',function(){openModal(btn.getAttribute('data-modal'));});
+  });
+  d.querySelectorAll('[data-close]').forEach(function(btn){
+    btn.addEventListener('click',closeAll);
+  });
+  d.querySelectorAll('.cs-modal').forEach(function(m){
+    m.addEventListener('click',function(e){if(e.target===m)closeAll();});
+  });
+  d.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll();});
+
+  /* 作者简介 */
+  d.querySelectorAll('[data-author]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var parts=(btn.getAttribute('data-author')||'').split('|');
+      var t=d.getElementById('cs-modal-author-t'),p=d.getElementById('cs-modal-author-p');
+      if(t)t.textContent=parts[0]||'创作者简介';
+      if(p)p.textContent=parts[1]||'该创作者暂无简介。';
+      openModal('cs-modal-author');
+    });
+  });
+
+  /* 回到顶部 */
+  var topBtn=d.getElementById('cs-top-btn');
+  if(topBtn){
+    window.addEventListener('scroll',function(){
+      topBtn.classList.toggle('is-show',window.scrollY>520);
+    },{passive:true});
+    topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  }
+
+  /* 数字滚动 */
+  var counters=d.querySelectorAll('[data-count]');
+  var seen=typeof IntersectionObserver!=='undefined';
+  function runCount(el){
+    var target=parseInt(el.getAttribute('data-count'),10)||0;
+    var start=0,dur=900,t0=null;
+    function step(ts){
+      if(!t0)t0=ts;
+      var p=Math.min((ts-t0)/dur,1);
+      var val=Math.round(start+(target-start)*(1-Math.pow(1-p,3)));
+      el.textContent=target>=1000?val.toLocaleString('en-US'):(target>=100&&val===target?val+'%':val.toLocaleString('en-US'));
+      if(p<1)requestAnimationFrame(step);
+      else el.textContent=target>=100&&target<=100?target+'%':(target===98?'98%':(target>=1000?target.toLocaleString('en-US'):target));
+    }
+    requestAnimationFrame(step);
+  }
+  if(seen&&counters.length){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){runCount(en.target);io.unobserve(en.target);}
+      });
+    },{threshold:.5});
+    counters.forEach(function(c){io.observe(c);});
+  }else{
+    counters.forEach(function(c){
+      var t=parseInt(c.getAttribute('data-count'),10)||0;
+      c.textContent=t===98?'98%':(t>=1000?t.toLocaleString('en-US'):t);
+    });
+  }
+})();
+</script>
+</body>
+  </html>
